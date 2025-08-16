@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url(../fonts/Ubuntu-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(../fonts/Ubuntu-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(../fonts/Ubuntu-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu-Medium', sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: #EEF5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    width: 1100px;
+    height: 660px;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+figure img {
+    width: 320px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 600px;
+    
+}
+
+section header {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+section header h1 {
+    font-size: 35px;
+    color: hsl(213, 96%, 18%);
+    font-family: 'Ubuntu-Bold', sans-serif;
+}
+
+section header p {
+    font-size: 26px;
+    color: hsla(213, 96%, 18%, 0.671);
+    font-family: 'Ubuntu-Regular', sans-serif;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section form label {
+    font-size: 26px;
+    color: hsla(213, 96%, 9%, 0.842);
+    font-family: 'Ubuntu-Regular';
+    margin-bottom: 10px;
+}
+
+section form input {
+    height: 30px;
+    width: 570px;
+    padding: 15px;
+    font-size: 26px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+section button {
+    height: 70px;
+    width: 150px;
+    background-color: #032B59;
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    align-self: flex-end;
+}
