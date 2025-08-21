@@ -16,7 +16,7 @@
                 <div class="container-containers">
                     <div class="container-box">
                     
-                        <div class="container-number">
+                        <div class="container-number active">
                             1
                         </div>
                         <div class="container-info">
@@ -91,15 +91,80 @@
                 <label for="inNumber" class="label">Phone Number</label>
                 <input type="number" class="input-number" id="inNumber" required>
 
+                <button id="btNext">Next Step</button>
             </form>
 
-            <button>Next Step</button>
-            
+
+
         </section>
 
-        <section class="step-2">
-            
+        <section class="step-2 activated">
+            <header>
+                <h1>Select your plan</h1>
+                <p>You have the option of monthly of yearly billing</p>
+            </header>
+            <form>
+                <div class="cards">
+
+                    <label class="plan">
+                    <input type="radio" name="plan">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="assets/imgs/icon-arcade.svg" alt="icon-arcade">
+                        </div>
+                        <div class="card-info">
+                            <h3>Arcade</h3>
+                            <p>$9/mo</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="plan">
+                    <input type="radio" name="plan">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="assets/imgs/icon-advanced.svg" alt="icon-advanced">
+                        </div>
+                        <div class="card-info">
+                            <h3>Advanced</h3>
+                            <p>$12/mo</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="plan">
+                    <input type="radio" name="plan">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="assets/imgs/icon-pro.svg" alt="icon-pro">
+                        </div>
+                        <div class="card-info">
+                            <h3>Pro</h3>
+                            <p>$15/mo</p>
+                        </div>
+                    </div>
+                </label>
+
+                </div>
+                
+                <div class="billing-toggle">
+                    <span>Monthly</span>
+                    <label>
+                        <input type="checkbox" id="billing">
+                        <div class="slider"></div>
+                    </label>
+                    <span>Yearly</span>
+                </div>
+
+                <div class="form-navigation">
+                    <input type="button" value="Go Back" class="btBack">
+                    <input type="submit" value="Next Step" class="btNext">
+                </div>
+
+            </form>
         </section>
     </main>
+
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
