@@ -101,17 +101,7 @@ figure img {
     outline: none;
 }
 
-.step-1 button {
-    height: 60px;
-    width: 150px;
-    background-color: #032B59;
-    color: white;
-    font-size: 20px;
-    border-radius: 12px;
-    align-self: flex-end;
-    border: none;
-    cursor: pointer;
-}
+
 
 .container-box {
     display: flex;
@@ -163,7 +153,7 @@ figure img {
     font-weight: 700;
 }
 
-.active {
+.numberActivated {
     background-color: #C3E3FF;
     border-color: #C3E3FF;;
     color: #483EFF;
@@ -292,7 +282,7 @@ figure {
     display: flex;
     width: 500px;
     justify-content: space-between;
-
+    
 }
 
 .btNext {
@@ -321,4 +311,17 @@ figure {
 
 .btBack:hover {
     color: #344ddd;
+}
+
+.step-1 button {
+    height: 40px;
+    width: 120px;
+    margin-top: 10px;
+    background-color: #032B59;
+    color: white;
+    font-size: 16px;
+    border-radius: 12px;
+    align-self: flex-end;
+    border: none;
+    cursor: pointer;
 }

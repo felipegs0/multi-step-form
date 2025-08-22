@@ -16,7 +16,7 @@
                 <div class="container-containers">
                     <div class="container-box">
                     
-                        <div class="container-number active">
+                        <div class="container-number numberActivated">
                             1
                         </div>
                         <div class="container-info">
@@ -78,12 +78,12 @@
                 
             </figure>
         </aside>
-        <section class="step-1">
+        <section class="step-1 activated step">
             <header>
                 <h1>Personal info</h1>
                 <p>Please provide your name, email adress, and phone number.</p>
             </header>
-            <form>
+            <form id="formInfo">
                 <label for="inName" class="label-name">Name</label>
                 <input type="text" class="input-name" id="inName" required>
                 <label for="inEmail" class="label-email">Email Address</label>
@@ -91,19 +91,19 @@
                 <label for="inNumber" class="label">Phone Number</label>
                 <input type="number" class="input-number" id="inNumber" required>
 
-                <button id="btNext">Next Step</button>
+                <button id="btNext" class="btNext">Next Step</button>
             </form>
 
 
 
         </section>
 
-        <section class="step-2 activated">
+        <section class="step-2 step">
             <header>
                 <h1>Select your plan</h1>
                 <p>You have the option of monthly of yearly billing</p>
             </header>
-            <form>
+            <form id="formPlan">
                 <div class="cards">
 
                     <label class="plan">
