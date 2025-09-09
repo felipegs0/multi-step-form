@@ -78,7 +78,7 @@
                 
             </figure>
         </aside>
-        <section class="step-1 activated step">
+        <section class="step-1 step ">
             <header>
                 <h1>Personal info</h1>
                 <p>Please provide your name, email adress, and phone number.</p>
@@ -93,9 +93,6 @@
 
                 <button id="btNext" class="btNext">Next Step</button>
             </form>
-
-
-
         </section>
 
         <section class="step-2 step">
@@ -104,48 +101,102 @@
                 <p>You have the option of monthly of yearly billing</p>
             </header>
             <form id="formPlan">
-                <div class="cards">
+                <div class="planMonth">
+                    <div class="cards">
 
-                    <label class="plan">
-                    <input type="radio" name="plan">
+                <label class="plan">
+                    <input type="radio" name="plan" value="9/mo">
                     <div class="card">
                         <div class="icon">
                             <img src="assets/imgs/icon-arcade.svg" alt="icon-arcade">
                         </div>
                         <div class="card-info">
                             <h3>Arcade</h3>
-                            <p>$9/mo</p>
+                            <p id="cardPriceArcM">$9/mo</p>
                         </div>
                     </div>
                 </label>
 
                 <label class="plan">
-                    <input type="radio" name="plan">
+                    <input type="radio" name="plan" value="12/mo">
                     <div class="card">
                         <div class="icon">
                             <img src="assets/imgs/icon-advanced.svg" alt="icon-advanced">
                         </div>
                         <div class="card-info">
                             <h3>Advanced</h3>
-                            <p>$12/mo</p>
+                            <p id="cardPriceAdvM">$12/mo</p>
                         </div>
                     </div>
                 </label>
 
                 <label class="plan">
-                    <input type="radio" name="plan">
+                    <input type="radio" name="plan" value="15/mo">
                     <div class="card">
                         <div class="icon">
                             <img src="assets/imgs/icon-pro.svg" alt="icon-pro">
                         </div>
                         <div class="card-info">
                             <h3>Pro</h3>
-                            <p>$15/mo</p>
+                            <p id="cardPriceProM">$15/mo</p>
+                            
                         </div>
                     </div>
                 </label>
 
                 </div>
+
+                </div>
+
+                <div class="planYearly" style="display: none;">
+                    <div class="cards">
+
+                    <label class="plan">
+                    <input type="radio" name="plan" value="90/yr">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="assets/imgs/icon-arcade.svg" alt="icon-arcade">
+                        </div>
+                        <div class="card-info">
+                            <h3>Arcade</h3>
+                            <p class="cardPriceArc">$90/yr</p>
+                            <p class="freeMonths">2 Free Months</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="plan">
+                    <input type="radio" name="plan" value="120/yr">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="assets/imgs/icon-advanced.svg" alt="icon-advanced">
+                        </div>
+                        <div class="card-info">
+                            <h3>Advanced</h3>
+                            <p id="cardPriceAdv">$120/yr</p>
+                            <p class="freeMonths">2 Free Months</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="plan">
+                    <input type="radio" name="plan" value="150/yr">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="assets/imgs/icon-pro.svg" alt="icon-pro">
+                        </div>
+                        <div class="card-info">
+                            <h3>Pro</h3>
+                            <p id="cardPricePro">$150/yr</p>
+                            <p class="freeMonths">2 Free Months</p>
+                            
+                        </div>
+                    </div>
+                </label>
+
+                </div>
+                </div>
+                
                 
                 <div class="billing-toggle">
                     <span>Monthly</span>
@@ -162,6 +213,13 @@
                 </div>
 
             </form>
+        </section>
+
+        <section class="step-3 step activated">
+            <header>
+                <h1>Pick add-ons</h1>
+                <p>Add-ons help enhance your gaming experience.</p>
+            </header>
         </section>
     </main>
 

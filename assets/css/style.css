@@ -50,7 +50,7 @@ figure img {
     width: 320px;
 }
 
-.step-1, .step-2 {
+.step-1, .step-2, .step-3 {
     display: none;
     flex-direction: column;
     gap: 50px;
@@ -201,18 +201,30 @@ figure {
     border-radius: 10px;
     padding: 15px;
     cursor: pointer;
-    height: 130px;
+    height: 145px;
     width: 120px;
     
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .card-info h3 {
     color: hsl(213, 96%, 18%);
     font-weight: 500;
+    
 }
 
 .card-info p {
     color: rgba(0, 0, 0, 0.452);
+}
+
+.card-info .freeMonths {
+    color: rgb(51, 155, 51);
+    
 }
 
 .card:hover {

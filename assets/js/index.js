@@ -12,11 +12,13 @@ function goToStep(current, next) {
 let user = {
     "userName": "",
     "userEmail": "",
-    "userNumber": 0
+    "userNumber": 0,
+    "userPlan": ""
 }
 
 const step1 = document.querySelector(".step-1")
 const step2 = document.querySelector(".step-2")
+const step3 = document.querySelector(".step-3")
 
 frmInfo.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -62,3 +64,31 @@ function prevNumber() {
     currentStep--;
     showSteps(currentStep);
 }
+
+const inBilling = document.querySelector("#billing");
+
+const cardsPlanMonth = document.querySelector(".planMonth");
+const cardsPlanYearly = document.querySelector(".planYearly");
+
+
+
+inBilling.addEventListener("change", () => {
+    if(inBilling.checked) {
+        cardsPlanYearly.style.display = "flex";
+        cardsPlanMonth.style.display = "none";
+    } else  {
+        cardsPlanYearly.style.display = "none";
+        cardsPlanMonth.style.display = "flex";
+    }
+})
+
+frmPlan.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const planSelected = document.querySelector('input[name="plan"]:checked');
+    user.userPlan = planSelected.value;
+    console.log(user)
+
+    goToStep(step2, step3)
+    nextNumber()
+})
